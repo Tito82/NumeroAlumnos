@@ -17,12 +17,14 @@ public class NunAlumnos {
 		int numAlumnos2=0;
 		
 		while((alumno = br1.readLine()) != null) 
-			
-			bw.write("el numero de alumnos de Dam1 es: "+ numAlumnos1++);
+			numAlumnos1++;
+		
+			bw.write("el numero de alumnos de Dam1 es: "+ numAlumnos1+"\n");
 		
 				
 		while((alumno = br2.readLine()) != null) 
-			bw.write("el numero de alumnos de Dam2 es: "+ numAlumnos2++);
+			numAlumnos2++;
+			bw.write("el numero de alumnos de Dam2 es: "+ numAlumnos2);
 		
 		bw.flush();
 		bw.close();
